@@ -1,0 +1,13 @@
+.container{
+    border: 2px solid;
+    width: 50vw;
+    margin: auto;
+    margin-block: 5px;
+}
+.container > ul{
+    width: fit-content;
+}
+#main-heading{
+    width:fit-content;
+    margin: auto;
+}

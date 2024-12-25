@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Propagation</title>
+    <style>
+        html{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        button{
+            font-family:'Courier New', Courier, monospace;
+            display: block;
+            margin: 5px auto;
+        }
+        div{
+            margin: 20px;
+            border: 2px solid black;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .div-2{
+            width: 50vw;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="div-2">
+        div 2
+        <div class="div-1">
+            div 1
+            <button>Click Me!</button>
+        </div>
+    </div>
+    <a href="../../index.html" style="position: fixed; bottom: 8px;">Home</a>
+
+    <script src="app.js"></script>
+</body>
+</html>

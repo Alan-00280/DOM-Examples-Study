@@ -1,0 +1,39 @@
+html{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    margin: auto;
+    width: fit-content;
+}
+
+#example-wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+.example > button {
+    display: block;
+    margin: auto;
+    border: none;
+    padding: 5px 15px;
+}
+.example > button:hover {
+    background-color: black;
+    color: white;
+}
+.example > button:active{
+    background-color: yellow;
+    color: lime;
+}
+
+.example{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30vw;
+    text-align: center;
+    border:2px solid black;
+    border-radius: 5px;
+    height: 30vh;
+}

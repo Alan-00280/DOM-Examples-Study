@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegasi</title>
+    <style>
+        html{
+            font-family: 'Courier New', Courier, monospace;
+            background-color: black;
+            color: lime;
+        }
+        div{
+            width: 50vw;
+            margin: auto;
+            border: 2px solid white;
+            border-radius: 5px;
+            text-align: center;
+        }
+        div > div{
+            border: 1px solid gray;
+            margin-block: 7px;
+            width: 90%;
+            cursor: pointer;
+        }
+        div>h3{
+            margin: 10px auto;
+            cursor: default;
+        }
+        a{
+            color: lime;
+        }
+    </style>
+</head>
+<body>
+    <h2>Event Delegation</h2>
+    <div class="olahraga">
+        <h3>Olahraga</h3>
+        <div class="olga sepak-bola">Sepak Bola</div>
+        <div class="olga basket">Basket</div>
+        <div class="olga voli">Voli</div>
+        <div class="olga tenis">Tenis</div>
+        <div class="olga raketan">Raketan</div>
+    </div>
+    <a href="../../index.html" style="position: fixed; bottom: 8px;">Home</a>
+
+    <script src="app.js"></script>
+</body>
+</html>
