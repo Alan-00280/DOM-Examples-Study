@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background: url('ac8d9277004a1b04a9119c3e8a607188.jpg') no-repeat center center/ cover;
+}
+
+.home-btn{
+    background-color: black;
+    color: lime;
+    font-family:'Courier New', Courier, monospace;
+    padding: 3px;
+    border-radius: 2px;
+    text-decoration: none;
+    font-weight: 500;
+}
+.home-btn:active{
+    background-color: yellow;
+    color: red;
+}
+.home-btn:hover{
+    background-color: lime;
+    color: black;
+}
+
+div{
+    margin-bottom: 5px;
+}
+
+.header{
+    background-color: #262626;
+    color: white;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 5px;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-weight:200;
+    font-size: 1.3rem;
+}
+
+.main-content{
+    background-color: #fff;
+    width: 50vw;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 40px 5px;
+}
+
+.main-content .text-area{
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.7rem;
+}
+
+.main-content .person{
+    color: red;
+    font-weight: 100;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 0.3rem;
+}
+
+.button-area button{
+    background-color: #262626;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+.button-area button:hover{
+    background-color: #0e0e0e;
+}
+.button-area button:active{
+    background-color: #d8d8d8;
+    color: #0e0e0e;
+}
