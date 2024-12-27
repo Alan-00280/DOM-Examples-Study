@@ -1,0 +1,111 @@
+/* General Syle */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+body{
+    height: 100vh;
+    background: url('./geranimo-qzgN45hseN0-unsplash.jpg') no-repeat center center/ cover;
+    position: relative;
+}
+
+.home-btn{
+    background-color: black;
+    color: lime;
+    font-family:'Courier New', Courier, monospace;
+    padding: 3px;
+    border-radius: 2px;
+    text-decoration: none;
+    font-weight: 500;
+    z-index: 0;
+}
+.home-btn:active{
+    background-color: yellow;
+    color: red;
+}
+.home-btn:hover{
+    background-color: lime;
+    color: black;
+}
+
+/* Open modal Button */
+#open-modal{
+    width: 350px;
+    height: 80px;
+    border: 1px solid white;
+    border-radius: 5px;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    font-size: 2rem;
+    font-weight: 300;
+    background: none;
+    color: white;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 8px 3px black;
+    transition: ease 0.5s;
+}
+#open-modal:hover{
+    background-color: white;
+    color: black;
+}
+#open-modal:active{
+    background: none;
+    transition: none;
+    color: white;
+}
+
+/* Modal */
+#modal-container{
+    display: none;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+#modal{
+    position: absolute;
+    padding: 15px;
+    background-color: white;
+    width: 200px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px black;
+    animation-name: animateModal;
+    animation-duration: 1s;
+}
+#close-btn{
+    font-size: 3rem;
+    font-weight:300;
+    align-items: center;
+    transform: translateY(-5%);
+    cursor: pointer;
+}
+#close-btn:hover{color: red;}
+#close-btn:active{color: black;}
+
+/*animate*/
+@keyframes animateModal{
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+
+    to{
+        top: 50%;
+        opacity: 1;
+    }
+}
