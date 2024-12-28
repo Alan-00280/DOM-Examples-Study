@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./laurin-steffens-IVGZ6NsmyBI-unsplash.jpg') no-repeat center center/ cover;
+}
+
+.home-btn{
+    background-color: black;
+    color: lime;
+    font-family:'Courier New', Courier, monospace;
+    padding: 3px;
+    border-radius: 2px;
+    text-decoration: none;
+    font-weight: 500;
+    z-index: 0;
+}
+.home-btn:active{
+    background-color: yellow;
+    color: red;
+}
+.home-btn:hover{
+    background-color: lime;
+    color: black;
+}
+
+
+/* STYLING */
+.accordion{
+    width: 65%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.accordion .accordion-title{
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.accordion .content-container{
+    transition: ease 0.5s;
+}
+
+.accordion .content-container .question{
+    padding-bottom: 10px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+    width: 100%;
+    transition: ease 0.5s;
+    position: relative;
+    cursor: pointer;
+}
+.accordion .content-container .question::after{
+    content: '+';
+    position: absolute;
+    right: 0px;
+}
+
+.accordion .content-container .answer{
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    height: 0px;
+    overflow: hidden;
+    transition: ease 0.5s;
+}
+
+/* Javascript Styling */
+.accordion .content-container.active .answer{
+    height: 150px;
+}
+.accordion .content-container.active .question{
+    font-size: 1rem;
+    transition: ease 0.5s;
+}
+.accordion .content-container.active .question::after{
+    content: '-';
+    transition: ease 0.5s;
+    font-size: 2rem;
+}
