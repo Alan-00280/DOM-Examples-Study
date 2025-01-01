@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+body{
+    height: 100vh;
+    background: url('./img/lee-jeffs-60wCqYf7Fg8-unsplash.jpg') no-repeat center center/ cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*HOME-BUTTON*/
+.home-btn{
+    background-color: black;
+    color: lime;
+    font-family:'Courier New', Courier, monospace;
+    padding: 3px;
+    border-radius: 2px;
+    text-decoration: none;
+    font-weight: 500;
+    z-index: 0;
+}
+.home-btn:active{
+    background-color: yellow;
+    color: red;
+}
+.home-btn:hover{
+    background-color: lime;
+    color: black;
+}
+
+.container{
+    width: 65%;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 5px;
+    text-align: center;
+}
+#timer{
+    font-size: 64px;
+    margin-block: 15px;
+}
+button {
+    border: none;
+    margin-inline: 5px;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 77px; height: 77px;
+}
+button i {
+    font-size: 2rem;
+    padding: 20px;
+    border-radius: 10px;
+    width: 77px; height: 77px;
+}
+
+#play:hover{
+    background-color: green;
+    color: white;
+}
+#reset:hover{
+    background-color: red;
+    color: white;
+}
+#pause{
+    background-color: orange;
+    color: white;
+}
