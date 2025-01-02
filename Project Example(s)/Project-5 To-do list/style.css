@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('./img/ionela-mat-DQzGtBbtMa8-unsplash.jpg') no-repeat center center/ cover;
+}
+
+/*HOME-BUTTON*/
+.home-btn{
+    background-color: black;
+    color: lime;
+    font-family:'Courier New', Courier, monospace;
+    padding: 3px;
+    border-radius: 2px;
+    text-decoration: none;
+    font-weight: 500;
+    z-index: 0;
+}
+.home-btn:active{
+    background-color: yellow;
+    color: red;
+}
+.home-btn:hover{
+    background-color: lime;
+    color: black;
+}
+
+#add-task-container{
+    background-color: white;
+    display: flex;
+    width: 350px;
+    box-shadow: 0 0 5px;
+    padding: 20px;
+    border-radius: 10px;
+}
+#add-task-container input{
+    flex: 5;
+    font-size: 1.2rem;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-weight: 300;
+}
+#add-task-container input:focus{
+    outline: none;
+}
+#add-task{
+    flex: 1;
+    font-size: 1.2rem;
+    transition: .3s;
+    color: green;
+    border: 1px solid green;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+#add-task:hover{
+    color: white;
+    background-color: green;
+}
+
+/*TASK STYLING*/
+.task{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    margin-block: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.task span{
+    flex: 4;
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+.task span.done{
+    text-decoration: line-through;
+}
+.task button{
+    transition: .3s;
+    flex: 1;
+    height: 30px;
+    border-radius: 5px;
+    background-color: white;
+    margin-inline: 2px;
+}
+.task .checkTask {
+    color: orange;
+    border: 2px solid orange;
+    font-size: 1.5rem;
+}
+.task .checkTask.done {
+    color: white;
+    background-color: orange;
+    font-size: 1.5rem;
+}
+.task .checkTask:hover{
+    background-color: orange;
+    color: #fff;
+}
+.task .deleteTask {
+    color: red;
+    border: 2px solid red;
+    font-size: 1.2rem;
+}
+.task .deleteTask:hover{
+    background-color: red;
+    color: #fff;
+}
